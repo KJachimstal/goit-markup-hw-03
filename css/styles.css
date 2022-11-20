@@ -16,6 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    width: 1600px;
     letter-spacing: 0.03em;
     background-color: var(--whiteColor);
     color: var(--secondaryPageColor);
@@ -37,11 +38,16 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 .link-select a:hover,
@@ -51,11 +57,16 @@ body {
     color: var(--mainPageColor);
 }
 
+.menu {
+    display: flex;
+}
+
 .menu-navigation {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondaryPageColor);
+    margin: 0 46px;
 }
 
 .menu-active {
@@ -63,9 +74,15 @@ body {
 
 }
 
+.menu-contact {
+    display: flex;
+    margin: auto;
+}
+
 .menu-contact a {
     color: var(--contactColor);
     font-weight: 500;
+    margin: 0 50px;
 }
 
 .logo {
@@ -74,6 +91,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: var(--blackColor);
+    margin: 0 93px 0 215px;
 }
 
 .logo span {
