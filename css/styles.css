@@ -116,6 +116,12 @@ body {
 
 .banner {
     background: var(--bannerBackgroundColor);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .banner-title {
@@ -126,6 +132,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--whiteColor);
+    width: 700px;
 }
 
 .banner-button {
