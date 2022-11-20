@@ -150,6 +150,16 @@ body {
     cursor: pointer;
 }
 
+.description-list {
+    display: flex;
+    justify-content: center;
+}
+
+.description-item {
+    width: 270px;
+    margin: 94px 30px;
+}
+
 .description-subtitle {
     font-weight: 700;
     font-size: 14px;
