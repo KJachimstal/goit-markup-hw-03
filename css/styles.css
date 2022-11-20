@@ -172,6 +172,15 @@ body {
     color: var(--contactColor);
 }
 
+.about_us {
+    display: flex;
+    justify-content: center;
+}
+
+.about_us-item {
+    margin: 50px 30px;
+}
+
 .about_us-title {
     font-weight: 700;
     font-size: 36px;
