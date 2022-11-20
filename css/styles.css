@@ -17,7 +17,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
-    background-color: var(--siteBackgroundColor);
+    background-color: var(--whiteColor);
     color: var(--secondaryPageColor);
 }
 
@@ -30,6 +30,20 @@ body {
     list-style-type: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .link-select a:hover,
 .link-select a:focus,
 .link-select ul li a:hover,
@@ -37,15 +51,21 @@ body {
     color: var(--mainPageColor);
 }
 
-.menu-navigation a {
+.menu-navigation {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondaryPageColor);
 }
 
+.menu-active {
+    color: var(--mainPageColor);
+
+}
+
 .menu-contact a {
     color: var(--contactColor);
+    font-weight: 500;
 }
 
 .logo {
@@ -64,6 +84,10 @@ body {
     color: var(--whiteColor);
 }
 
+.footer {
+    background: var(--bannerBackgroundColor);
+}
+
 .footer-navigation a {
     color: var(--footerContactColor);
 }
@@ -72,9 +96,14 @@ body {
     color: var(--whiteColor);
 }
 
+.banner {
+    background: var(--bannerBackgroundColor);
+}
+
 .banner-title {
     font-weight: 900;
     font-size: 44px;
+    font-family: inherit;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
@@ -90,17 +119,15 @@ body {
     height: 50px;
     font-weight: 700;
     font-size: 16px;
+    font-family: inherit;
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
 
-.description-title {
-    display: none;
-}
-
 .description-subtitle {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     color: var(--secondaryPageColor);
 }
@@ -116,6 +143,10 @@ body {
     line-height: 1.16;
     text-align: center;
     color: var(--secondaryPageColor);
+}
+
+.crew {
+    background: var(--buttonColor);
 }
 
 .crew-title {
@@ -143,10 +174,6 @@ body {
 
 /*-------------------------------------- PORTFOLIO STLES --------------------------------------*/
 
-.portfolio h2 {
-    display: none;
-}
-
 .portfolio h3 {
     font-weight: 700;
     font-size: 18px;
@@ -155,20 +182,23 @@ body {
     color: var(--secondaryPageColor);
 }
 
-.portfolio span {
+.portfolio p {
     font-size: 16px;
     line-height: 1.87;
-    color: var(--contactColor );
+    color: var(--contactColor);
 }
 
 .portfolio button {
     font-weight: 500;
     font-size: 16px;
+    font-family: inherit;
     line-height: 1.62;
+    letter-spacing: 0.03em;
     text-align: center;
     border-radius: 4px;
     background: var(--buttonColor);
     color: var(--secondaryPageColor);
+    cursor: pointer;
 }
 
 .portfolio button:hover,
@@ -176,6 +206,4 @@ body {
     color: var(--whiteColor);
     background: var(--mainPageColor);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    cursor: pointer;
 }
