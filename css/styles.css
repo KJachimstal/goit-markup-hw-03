@@ -10,9 +10,11 @@
     --footerContactColor: rgba(255, 255, 255, 0.6);
     --bannerBackgroundColor: #2F303A;
     --buttonColor: #F5F4FA;
+    --headerButtonColor: #ECECEC;
 }
 
-ul {
+* {
+    margin: 0;
     padding: 0;
 }
 
@@ -20,10 +22,20 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    width: 1600px;
     letter-spacing: 0.03em;
     background-color: var(--whiteColor);
     color: var(--secondaryPageColor);
+}
+
+.container {
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section {
+    padding: 94px 0 94px;
 }
 
 .no-decoration a {
@@ -49,9 +61,10 @@ body {
 }
 
 .header {
-    height: 80px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--headerButtonColor);
 }
 
 .link-select a:hover,
@@ -99,6 +112,7 @@ body {
 
 .logo-menu {
     margin: 0 93px 0 215px;
+    padding: 24px 0 25px;
 }
 
 .logo span {
