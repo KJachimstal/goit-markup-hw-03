@@ -207,12 +207,16 @@ body {
 }
 
 .about_us {
+    padding-top: 0;
+}
+
+.about_us-list {
     display: flex;
     justify-content: center;
 }
 
 .about_us-item {
-    margin: 50px 30px;
+    margin: 0 30px;
 }
 
 .about_us-title {
@@ -221,6 +225,7 @@ body {
     line-height: 1.16;
     text-align: center;
     color: var(--secondaryPageColor);
+    padding-bottom: 50px;
 }
 
 .crew {
