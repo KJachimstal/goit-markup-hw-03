@@ -12,6 +12,10 @@
     --buttonColor: #F5F4FA;
 }
 
+ul {
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -91,6 +95,9 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: var(--blackColor);
+}
+
+.logo-menu {
     margin: 0 93px 0 215px;
 }
 
@@ -100,10 +107,23 @@ body {
 
 .logo-footer {
     color: var(--whiteColor);
+    margin: 0 0 20px 215px;
 }
 
 .footer {
     background: var(--bannerBackgroundColor);
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-list {
+    margin: 0 0 0 215px;
+}
+
+.footer-item {
+    margin: 0 0 9px;
 }
 
 .footer-navigation a {
