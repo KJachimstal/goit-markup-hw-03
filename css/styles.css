@@ -191,6 +191,23 @@ body {
 
 .crew {
     background: var(--buttonColor);
+    height: 648px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew-list {
+    display: flex;
+    justify-content: center;
+}
+
+.crew-item {
+    width: 270px;
+    background: var(--whiteColor);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0 30px;
 }
 
 .crew-title {
@@ -207,6 +224,7 @@ body {
     line-height: 1.18;
     text-align: center;
     color: var(--secondaryPageColor);
+    margin: 30px 0 10px;
 }
 
 .crew-position {
@@ -214,6 +232,7 @@ body {
     line-height: 1.18;
     text-align: center;
     color: var(--contactColor);
+    padding: 0 0 30px;
 }
 
 /*-------------------------------------- PORTFOLIO STLES --------------------------------------*/
