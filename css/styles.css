@@ -122,11 +122,11 @@ body {
 .logo-footer {
     color: var(--whiteColor);
     margin: 0 0 20px 215px;
+    padding-top: 60px;
 }
 
 .footer {
     background: var(--bannerBackgroundColor);
-    height: 252px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,8 +136,12 @@ body {
     margin: 0 0 0 215px;
 }
 
+.footer-list li:last-child {
+    padding-bottom: 60px;
+}
+
 .footer-item {
-    margin: 0 0 9px;
+    padding-bottom: 9px;
 }
 
 .footer-navigation a {
