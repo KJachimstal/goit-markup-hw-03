@@ -11,6 +11,7 @@
     --bannerBackgroundColor: #2F303A;
     --buttonColor: #F5F4FA;
     --headerButtonColor: #ECECEC;
+    --portfolioBorderColor: #EEEEEE;
 }
 
 * {
@@ -305,6 +306,33 @@ body {
     background: var(--buttonColor);
     color: var(--secondaryPageColor);
     cursor: pointer;
+    padding: 6px 22px 6px 22px;
+    margin-right: 8px;
+}
+
+.portfolio-bottons-list{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item {
+    border: 1px solid var(--portfolioBorderColor);
+}
+
+.portfolio-item-name {
+    padding: 20px 0 4px 24px;
+}
+
+.portfolio-item-description {
+    padding: 0 0 20px 24px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    padding: 50px 100px 0 100px;
 }
 
 .portfolio button:hover,
