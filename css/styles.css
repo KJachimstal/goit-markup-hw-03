@@ -150,12 +150,11 @@ body {
 
 .banner {
     background: var(--bannerBackgroundColor);
-    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    padding-bottom: 200px;
 }
 
 .banner-title {
@@ -167,6 +166,7 @@ body {
     letter-spacing: 0.06em;
     color: var(--whiteColor);
     width: 700px;
+    padding: 106px 0 30px 0;
 }
 
 .banner-button {
