@@ -43,7 +43,6 @@ button {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
     background-color: var(--whiteColor);
@@ -51,11 +50,9 @@ body {
 }
 
 .container {
+    display: flex;
     margin: 0 auto;
     width: 1600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .section {
@@ -85,9 +82,7 @@ body {
 }
 
 .header {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
     border-bottom: 1px solid var(--headerButtonColor);
 }
 
@@ -100,6 +95,7 @@ body {
 
 .menu {
     display: flex;
+    gap: 50px;
 }
 
 .menu-navigation {
@@ -107,7 +103,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondaryPageColor);
-    margin: 0 46px;
+    
 }
 
 .menu-active {
@@ -117,13 +113,14 @@ body {
 
 .menu-contact {
     display: flex;
-    margin: auto;
+    margin-left: auto;
+    margin-right: 215px;
+    gap: 50px;
 }
 
 .menu-contact a {
     color: var(--contactColor);
     font-weight: 500;
-    margin: 0 50px;
 }
 
 .logo {
