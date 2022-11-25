@@ -15,8 +15,8 @@
         <title>WebStudio</title>
     </head>
     <body>
-        <header>
-            <div class="container header">
+        <header class="header">
+            <div class="container header-container">
                 <a href="./index.html" class="logo logo-menu"
                     ><span>Web</span>Studio</a
                 >
@@ -54,9 +54,9 @@
             </div>
         </header>
         <main>
-            <section>
-                <div class="section container portfolio">
-                    <h2 class="visually-hidden">Portfolio</h2>
+            <section class="section portfolio">
+                <div class="container">
+                    <h1 class="visually-hidden">Portfolio</h1>
                     <ul class="portfolio-bottons-list">
                         <li><button type="button">Wszystkie</button></li>
                         <li><button type="button">Strony</button></li>
@@ -72,10 +72,12 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">Technocrack</h3>
-                            <p class="portfolio-item-description">
-                                Strona internetowa
-                            </p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">Technocrack</h3>
+                                <p class="portfolio-item-description">
+                                    Strona internetowa
+                                </p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -84,10 +86,12 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">
-                                Grafika New Orlean vs Golden Star
-                            </h3>
-                            <p class="portfolio-item-description">Dizajn</p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">
+                                    Grafika New Orlean vs Golden Star
+                                </h3>
+                                <p class="portfolio-item-description">Dizajn</p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -96,10 +100,14 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">
-                                Restauracja Seafood
-                            </h3>
-                            <p class="portfolio-item-description">Aplikacja</p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">
+                                    Restauracja Seafood
+                                </h3>
+                                <p class="portfolio-item-description">
+                                    Aplikacja
+                                </p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -108,8 +116,14 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">Projekt Prime</h3>
-                            <p class="portfolio-item-description">Marketing</p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">
+                                    Projekt Prime
+                                </h3>
+                                <p class="portfolio-item-description">
+                                    Marketing
+                                </p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -118,8 +132,14 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">Projekt Boxes</h3>
-                            <p class="portfolio-item-description">Aplikacja</p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">
+                                    Projekt Boxes
+                                </h3>
+                                <p class="portfolio-item-description">
+                                    Aplikacja
+                                </p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -128,12 +148,14 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">
-                                Inspiration has no Borders
-                            </h3>
-                            <p class="portfolio-item-description">
-                                Strona internetowa
-                            </p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">
+                                    Inspiration has no Borders
+                                </h3>
+                                <p class="portfolio-item-description">
+                                    Strona internetowa
+                                </p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -142,10 +164,12 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">
-                                Magazyn Limited Edition
-                            </h3>
-                            <p class="portfolio-item-description">Dizajn</p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">
+                                    Magazyn Limited Edition
+                                </h3>
+                                <p class="portfolio-item-description">Dizajn</p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -154,8 +178,12 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">Projekt LAB</h3>
-                            <p class="portfolio-item-description">Marketing</p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">Projekt LAB</h3>
+                                <p class="portfolio-item-description">
+                                    Marketing
+                                </p>
+                            </div>
                         </li>
                         <li class="portfolio-item">
                             <img
@@ -164,21 +192,25 @@
                                 width="370"
                                 height="294"
                             />
-                            <h3 class="portfolio-item-name">
-                                Growing Business
-                            </h3>
-                            <p class="portfolio-item-description">Aplikacja</p>
+                            <div class="portfolio-item-container">
+                                <h3 class="portfolio-item-name">
+                                    Growing Business
+                                </h3>
+                                <p class="portfolio-item-description">
+                                    Aplikacja
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="container footer">
+        <footer class="footer">
+            <div class="container">
                 <a href="./index.html" class="logo logo-footer"
                     ><span>Web</span>Studio</a
                 >
-                <address class="footer-navigation link-select">
+                <address class="footer-navigation">
                     <ul class="footer-list">
                         <li class="footer-item">
                             <a
