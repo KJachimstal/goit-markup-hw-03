@@ -14,17 +14,28 @@
     --portfolioBorderColor: #EEEEEE;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+/*-------------------------------------- GLOBAL STLES --------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
-a {
+a,
+li {
+    font-style: normal;
     text-decoration: none;
 }
 
@@ -59,15 +70,6 @@ body {
     padding: 94px 0;
 }
 
-.no-decoration a {
-    text-decoration: none;
-    font-style: normal;
-}
-
-.no-list-style li {
-    list-style-type: none;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -81,47 +83,49 @@ body {
     overflow: hidden;
 }
 
+/*-------------------------------------- HEADER STLES --------------------------------------*/
+
 .header {
     align-items: center;
     border-bottom: 1px solid var(--headerButtonColor);
 }
 
-.link-select a:hover,
-.link-select a:focus,
-.link-select ul li a:hover,
-.link-select ul li a:focus {
+.menu a:hover,
+.menu a:focus,
+.menu ul li a:hover,
+.menu ul li a:focus {
     color: var(--mainPageColor);
 }
 
-.menu {
+.menu-list {
     display: flex;
     gap: 50px;
 }
 
-.menu-navigation {
+.menu-item {
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondaryPageColor);
-    
 }
 
-.menu-active {
-    color: var(--mainPageColor);
-
-}
-
-.menu-contact {
+.menu-contact-list {
     display: flex;
     margin-left: auto;
     margin-right: 215px;
     gap: 50px;
 }
 
-.menu-contact a {
+.menu-contact-item {
     color: var(--contactColor);
     font-weight: 500;
 }
+
+.menu-item-active {
+    color: var(--mainPageColor);
+}
+
+/*-------------------------------------- LOGO STLES --------------------------------------*/
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -131,13 +135,13 @@ body {
     color: var(--blackColor);
 }
 
+.logo span {
+    color: var(--mainPageColor);
+}
+
 .logo-menu {
     margin: 0 93px 0 215px;
     padding: 24px 0 25px;
-}
-
-.logo span {
-    color: var(--mainPageColor);
 }
 
 .logo-footer {
@@ -145,6 +149,8 @@ body {
     margin: 0 0 20px 215px;
     padding-top: 60px;
 }
+
+/*-------------------------------------- FOOTER STLES --------------------------------------*/
 
 .footer {
     background: var(--bannerBackgroundColor);
@@ -172,6 +178,8 @@ body {
 .footer-navigation li:first-child a {
     color: var(--whiteColor);
 }
+
+/*-------------------------------------- BANNER STLES --------------------------------------*/
 
 .banner {
     display: block;
@@ -206,39 +214,42 @@ body {
     padding: 10px 41px
 }
 
+/*-------------------------------------- DESCRIPTION STLES --------------------------------------*/
+
 .description-list {
     display: flex;
     justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
 }
 
 .description-item {
     width: 270px;
-    margin: 0 30px;
 }
 
-.description-subtitle {
+.description-item-subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     color: var(--secondaryPageColor);
 }
 
-.description-content {
+.description-item-content {
     line-height: 1.71;
     color: var(--contactColor);
 }
 
+/*-------------------------------------- ABOUT US STLES --------------------------------------*/
+
 .about_us {
     padding-top: 0;
+    display: block;
 }
 
 .about_us-list {
     display: flex;
     justify-content: center;
-}
-
-.about_us-item {
-    margin: 0 30px;
+    gap: 30px;
 }
 
 .about_us-title {
@@ -250,24 +261,17 @@ body {
     padding-bottom: 50px;
 }
 
+/*-------------------------------------- CREW STLES --------------------------------------*/
+
 .crew {
     background: var(--buttonColor);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
 }
 
 .crew-list {
     display: flex;
     justify-content: center;
-}
-
-.crew-item {
-    width: 270px;
-    background: var(--whiteColor);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    margin: 0 30px;
+    gap: 30px;
 }
 
 .crew-title {
@@ -276,10 +280,17 @@ body {
     line-height: 1.16;
     text-align: center;
     color: var(--secondaryPageColor);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
-.crew-name {
+.crew-item {
+    width: 270px;
+    background: var(--whiteColor);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.crew-item-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -288,7 +299,7 @@ body {
     margin: 30px 0 10px;
 }
 
-.crew-position {
+.crew-item-position {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -298,38 +309,33 @@ body {
 
 /*-------------------------------------- PORTFOLIO STLES --------------------------------------*/
 
-.portfolio h3 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--secondaryPageColor);
+.portfolio {
+    display: block;
 }
 
-.portfolio p {
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--contactColor);
+.portfolio-bottons-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
 .portfolio button {
     font-weight: 500;
     font-size: 16px;
-    font-family: inherit;
     line-height: 1.62;
     letter-spacing: 0.03em;
     text-align: center;
-    border-radius: 4px;
     background: var(--buttonColor);
     color: var(--secondaryPageColor);
-    cursor: pointer;
-    padding: 6px 22px 6px 22px;
-    margin-right: 8px;
+    padding: 6px 22px;
 }
 
-.portfolio-bottons-list{
+.portfolio-item-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 210px;
 }
 
 .portfolio-item {
@@ -337,19 +343,19 @@ body {
 }
 
 .portfolio-item-name {
-    padding: 20px 0 4px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondaryPageColor);
+    margin: 20px 0 4px 24px;
 }
 
 .portfolio-item-description {
-    padding: 0 0 20px 24px;
-}
-
-.portfolio-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px 30px;
-    padding: 50px 100px 0 100px;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--contactColor);
+    margin: 0 0 20px 24px;
 }
 
 .portfolio button:hover,
